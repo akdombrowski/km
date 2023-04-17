@@ -1,7 +1,7 @@
 @tailwind base;
 
 a {
-  @apply text-blue-700;
+  @apply text-cyan-300;
 }
 
 a:hover {
@@ -11,6 +11,10 @@ a:hover {
 @tailwind components;
 
 @tailwind utilities;
+
+p {
+  @apply text-sky-400
+}
 
 .content p {
   @apply my-6;

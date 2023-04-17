@@ -3,8 +3,11 @@ module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     fontSize: {
+      xxxs: "0.1rem",
+      xxs: "0.5rem",
       xs: '0.75rem',
       sm: '0.875rem',
+      md: "0.95rem",
       base: '1rem',
       lg: '1.125rem',
       xl: '1.25rem',
@@ -38,6 +41,9 @@ module.exports = {
           800: '#2c5282',
           900: '#2a4365',
         },
+        sky: {
+          1000: "#04080f"
+        }
       },
     },
   },
