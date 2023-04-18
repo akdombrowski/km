@@ -1,14 +1,10 @@
 import "../styles/global.css";
 
-import type { AppProps } from "next/app";
-import { Tilt_Warp } from "next/font/google";
+import App from "next/app";
+import type { AppProps, AppContext } from "next/app";
 
-const tiltwarp = Tilt_Warp({ subsets: ["latin"] });
-
-const MyApp = ({ Component, pageProps }: AppProps) => (
-  <main className={tiltwarp.className}>
-    <Component {...pageProps} />
-  </main>
-);
+const MyApp = ({ Component, pageProps }: AppProps) => {
+  return <Component {...pageProps} />;
+};
 
 export default MyApp;

@@ -31,7 +31,7 @@ const LoginBotDetection = () => {
           </div>
           <div className="w-full flex columns-3 gap-10">
             <div id="Bot Detection">
-              <a href="https://auth.pingone.com/4e5491d5-74b6-4953-a3d1-c29f76f34d93/as/authorize?response_type=code&client_id=89de4bc4-6d8e-483d-be89-db9003109076&scope=openid%20profile%20p1%3Aread%3Auser&nonce=54321&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2FpingoneOAuthCallback">
+              <a href="https://auth.pingone.com/4e5491d5-74b6-4953-a3d1-c29f76f34d93/as/authorize?response_type=code&client_id=89de4bc4-6d8e-483d-be89-db9003109076&scope=openid%20profile%20p1%3Aread%3Auser&nonce=54321&redirect_uri=http://localhost:3000/myaccount">
                 Bot Detection
               </a>
             </div>

@@ -5,13 +5,16 @@ import { AppConfig } from "@/utils/AppConfig";
 
 import { UserCircleIcon } from "@heroicons/react/24/solid";
 
+import { Tilt_Warp } from "next/font/google";
+const tiltwarp = Tilt_Warp({ subsets: ["latin"] });
+
 type IMainProps = {
   meta: ReactNode;
   children: ReactNode;
 };
 
 const Main = (props: IMainProps) => (
-  <div className="w-full px-1 text-gray-700 antialiased">
+  <div className={tiltwarp.className + " w-full px-1 text-gray-700 antialiased"}>
     {props.meta}
 
     <div className="mx-auto px-10">
@@ -80,7 +83,7 @@ const Main = (props: IMainProps) => (
         </nav>
       </header>
 
-      <main className="content p-5 text-xl">{props.children}</main>
+      <main className={"content p-5 text-xl"}>{props.children}</main>
 
       <footer className="border-t border-gray-300 py-8 text-center text-sm">
         © Copyright {new Date().getFullYear()} {AppConfig.title}
